@@ -98,6 +98,12 @@
   animation: popupIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
   animation-delay: 1s;
   opacity: 0;
+  font-size: 1.2rem;
+}
+
+.association-sponsor {
+  height: 8%;
+  min-height: 40px;
 }
 
 .ashv-title {
@@ -118,9 +124,55 @@
   opacity: 0;
 }
 
-@media (max-width: 600px) {
+/* Responsive styles for hero section elements */
+/* Medium devices (tablets) */
+@media (max-width: 992px) {
+  .ashv-tagline {
+    font-size: 1.2rem;
+  }
+  .association-text {
+    font-size: 1.1rem;
+  }
+  .association-sponsor {
+    min-height: 35px;
+  }
+}
+
+/* Small devices (phones) */
+@media (max-width: 768px) {
   .ashv-tagline {
     font-size: 1.1rem;
+  }
+  .association-text {
+    font-size: 1rem;
+  }
+  .association-sponsor {
+    min-height: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ashv-tagline {
+    font-size: 1rem;
+  }
+  .association-text {
+    font-size: 0.9rem;
+  }
+  .association-sponsor {
+    min-height: 25px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 400px) {
+  .ashv-tagline {
+    font-size: 0.85rem;
+  }
+  .association-text {
+    font-size: 0.8rem;
+  }
+  .association-sponsor {
+    min-height: 20px;
   }
 }
 
@@ -147,7 +199,30 @@
 			.title-sponser {
 				transform: translateX(-125%) translateY(90%) !important;
 			}
-
+			
+			/* Make horses smaller in mobile view */
+			.horse {
+				transform: scale(0.95);
+			}
+			.left-horse {
+				transform: rotateY(180deg) scale(0.95);
+			}
+			.right-horse {
+				transform: scale(0.95);
+			}
+			
+			/* Increase z-index for hero elements to prevent overlap */
+			.ashv,
+			.association-text,
+			.association-sponsor,
+			.ashv-title,
+			.ashv-tagline,
+			.hero-title,
+			#ashv-countdown,
+			.explore-events {
+				z-index: 10 !important;
+				position: relative;
+			}
 		}
 	</style>
 </head>
