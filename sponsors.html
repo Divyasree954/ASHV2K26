@@ -70,6 +70,12 @@
 				padding: 10px;
 				margin: 10px;
 			}
+			#mobile-pics {
+				width: 100%;
+				display: block;
+				padding: 10px;
+				margin: 10px;
+			}
 
 			#desktop-pic {
 				display: none;
@@ -552,7 +558,7 @@
     <button id="show-sponsors" class="cta-button" style="align-self: center; justify-self: center;">2024
 		Sponsors</button>
 
-	<button id="show-sponsors" class="cta-button" style="align-self: center; justify-self: center;">2024
+	<button id="show-sponsorss" class="cta-button" style="align-self: center; justify-self: center;">2025
 		Sponsors</button>
 	<div id="sponsor-popup" class="popup">
 		<span id="popup-close" class="popup-close">&times;</span>
@@ -560,6 +566,14 @@
 			<img src="assets/images/20.jpg" alt="2024 Sponsers" id="desktop-pic">
 			<img src="assets/images/pic1.png" alt="2024 Sponsers" id="mobile-pic">
 			<img src="assets/images/pic2.png" alt="2024 Sponsers" id="mobile-pic">
+		</div>
+	</div>
+	<div id="sponsor-popups" class="popup">
+		<span id="popup-closes" class="popup-close">&times;</span>
+		<div class="sponser">
+			<img src="assets/images/25.png" alt="2024 Sponsers" id="desktop-pic">
+			<img src="assets/images/2025.jpeg" alt="2024 Sponsers" id="mobile-pic">
+			<img src="assets/images/2k25.jpeg" alt="2024 Sponsers" id="mobile-pic">
 		</div>
 	</div>
 	<!-- Footer -->
@@ -657,6 +671,23 @@
 		window.addEventListener('click', (event) => {
 			if (event.target === sponsorPopup) {
 				sponsorPopup.classList.remove('active');
+			}
+		});
+		const showSponsorsButtons = document.getElementById('show-sponsorss');
+		const sponsorPopups = document.getElementById('sponsor-popups');
+		const popupCloses = document.getElementById('popup-closes');
+
+		showSponsorsButtons.addEventListener('click', () => {
+			sponsorPopups.classList.add('active');
+		});
+
+		popupCloses.addEventListener('click', () => {
+			sponsorPopups.classList.remove('active');
+		});
+
+		window.addEventListener('click', (event) => {
+			if (event.target === sponsorPopups) {
+				sponsorPopups.classList.remove('active');
 			}
 		});
 	</script>
