@@ -381,8 +381,10 @@ header {
 	}
 	
 	.year-logo {
-		height: 50% !important;
+		height: 5.5rem !important;
+		width: auto;
 		scale: 0.8 !important;
+		margin-top: -10px;
 	}
 }
 
