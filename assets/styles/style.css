@@ -250,7 +250,7 @@ button {
 	}
 	
 	.two6-years-logo img{
-		height: 5.5rem !important;
+		height: 5.5rem ;
 		width: 5rem;
 	}
 
@@ -376,7 +376,7 @@ header {
 	}
 	
 	.two6-years-logo img{
-		height: 5.5rem !important;
+		height: 5.5rem;
 		width: 5rem;
 	}
 	nav {
@@ -806,7 +806,7 @@ header {
 	justify-content: center;
 	padding: 2rem 0;
 	/* background-color: #3C289F; */
-	background: linear-gradient(to right bottom, #110f84, #195599, #8400ff);
+	background: linear-gradient(to right bottom, #caae31, #d37861, #d1c62f);
 	flex-grow: 1;
 }
 
@@ -814,7 +814,7 @@ header {
 	font-size: 3rem;
 	font-weight: 700;
 	margin: 20px;
-	color: var(--color-accent);
+	color: rgb(3, 3, 82);
 }
 
 .gallery-slider {
@@ -878,14 +878,14 @@ header {
 	justify-content: center;
 	padding: 20px;
 	flex-grow: 1;
-	background: linear-gradient(to right top, #110f84, #195599, #8400ff);
+	background: linear-gradient(to  top, #caae31, #bebe4f, #f7f6f8);
 }
 
 .album-title {
 	margin-bottom: 20px;
 	text-align: center;
 	font-size: 3rem;
-	color: var(--color-accent);
+	color: rgb(94, 94, 5);
 	font-weight: 700;
 }
 
@@ -999,7 +999,7 @@ header {
 .shows-section {
 	width: 100%;
 	margin: 0 auto;
-	background: linear-gradient(180deg, #f865b7 0%, #c94cc9, #8d2ce1 100%);
+	background: linear-gradient(180deg, #e77abd 0%, #daa4da, #b6ddb6 100%);
 }
 
 .shows-grid {
@@ -1254,10 +1254,12 @@ header {
 	color: var(--color-secondary);
 }
 h2 {
-	color: #1e3a8a;
+	color: #fbff00;
 	font-size: 1.8rem;
 	margin-bottom: 1rem;
 	font-weight: 900;
+	letter-spacing: 2px;
+	text-decoration: underline;
 }
 
 .ashv-subtitle {
@@ -1275,7 +1277,7 @@ h2 {
 }
 
 .visit-title {
-	color: #1e3a8a;
+	color: #8a1e1e;
 	font-size: 1.5rem;
 	font-weight: 900;
 	margin-bottom: 0.75rem;
@@ -1342,9 +1344,9 @@ h2 {
 
 /* Footer */
 .footer {
-	background: linear-gradient(90deg, #08437f, #8c00d1);
+	background:#253455;
 	padding: 20px 40px;
-	color: white;
+	color: rgb(12, 0, 0);
 	font-family: Arial, sans-serif;
 }
 
