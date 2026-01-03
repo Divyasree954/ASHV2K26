@@ -346,6 +346,26 @@
 			border: 2px solid red;
 		}
 
+		.become-sponsor-btn {
+			margin-top: 2rem;
+			font-size: 1.5rem;
+			text-decoration: none;
+			padding: 1rem 2rem;
+			white-space: nowrap;
+			background-color: #ffd700;
+			color: #000;
+			border-radius: 5px;
+			box-shadow: 0 0 10px 2px #ffd700;
+			transition: all 0.3s ease-in-out;
+			display: inline-block;
+		}
+
+		.become-sponsor-btn:hover {
+			transform: translateY(-5px) scale(1.05);
+			box-shadow: 0 0 20px 5px #ffd700;
+			background-color: #ffed4e;
+		}
+
 		@media screen and (max-width: 600px) {
 			.diamond {
 				width: 100%;
@@ -608,15 +628,9 @@
 			</div>
 		</div>
 	</div> -->
-	<div style="margin-left: 1vw;display: flex; flex-direction: row;padding-left: max(5%, env(safe-area-inset-left));
-        padding-right: max(5%, env(safe-area-inset-right));border: 2px solid white;border-radius: 50vh; display: flex; padding-block: 0.5rem; align-items: center; justify-content: center; width: 50vw;"
-		class="broucher-container">
-		<p style="color: white; font-size: 2rem;white-space: nowrap;" class="sponsor-p">For Sponsorship :</p> 
-		<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
-		<button onclick="window.open('assets/Sponsership Brochure.pdf')"
-			style="background-color: transparent; outline: none; border: none; text-decoration: underline;color: #fecf00;text-align: left;align-self: flex-start;cursor: pointer; font-size: 2rem; width: 32%; height: auto; text-align: center;"
-			class="sponsor-p">Brochure</button>
-	</div>
+	<a href="https://forms.gle/CcMhbGEQAuWv4zuu6" target="_blank" class="become-sponsor-btn">
+		Become a Sponsor <i class="fas fa-arrow-right"></i>
+	</a>
     <button id="show-sponsors" class="cta-button" style="align-self: center; justify-self: center;">2024
 		Sponsors</button>
 
