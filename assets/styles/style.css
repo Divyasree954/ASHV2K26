@@ -287,6 +287,12 @@ header {
 .hero {
 	z-index: 1;
 }
+@media (max-width:600px){
+	.ashv{
+		height: 5rem;
+		width: 5rem;
+	}
+}
 
 @media (min-width: 601px) and (max-width: 992px) {
 	.left-horse {
@@ -360,7 +366,7 @@ header {
 		right: -70vw !important;
 	}
 	.ashv {
-		width: 50vw;
+		width: 45vw;
 		margin-bottom:-1vh;
 	}
 	header {

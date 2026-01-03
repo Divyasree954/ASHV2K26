@@ -14,6 +14,9 @@
 		href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap"
 		rel="stylesheet">
+   
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 	<style>
 		html,
 		body {
@@ -98,6 +101,11 @@
 				margin-block: 1rem;
 				text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 			}
+			.ashv{
+			height: 10rem;
+			width: 15rem;
+
+			}
 		}
 
 		/* Extra small devices (very small phones) */
@@ -151,6 +159,8 @@
 		}
 
 		.ashv {
+			height: 15rem;
+			width: 30rem;
 			animation: popupIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 			animation-delay: 1s;
 			opacity: 0;
@@ -815,6 +825,59 @@
 				max-height: 50vh;
 			}
 		}
+
+		.shows-new{
+			
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			background: linear-gradient(180deg, #e77abd 0%, #daa4da, #b6ddb6 100%);
+
+		}
+		.shows-new-heading{
+			width: 100%;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 5px 20px;
+			
+
+		}
+		
+		.shows-new-content{
+			display: flex;
+			flex-direction: column;
+			
+
+		}
+		.shows-new-div{
+			padding: 10px 10px;
+			display: flex;
+			gap: 20px;
+			justify-content: space-around;
+			
+			align-items: center;
+		}
+		.show-new-image{
+			height: 20rem;
+			width: 23rem;
+		}
+		.show-new-image img{
+			height: 100%;
+			width: 100%;
+			border: 10px solid whitesmoke;
+			border-radius: 10px;
+			
+		}
+		.show-new-data h1{
+
+			font-size: 2.5rem;
+			
+		}
+		
+
+
 	</style>
 </head>
 
@@ -829,7 +892,7 @@
 				<span></span>
 				<span></span>
 			</div>
-			<img src="./assets/img/ashv-theraceoftalent.png	" alt="Loader Image">
+			<img src="./assets/Ashv-logo-final.PNG" alt="Loader Image">
 		</div>
 	</div>
 	<!-- Notification -->
@@ -871,7 +934,7 @@
 		<div class="mits-logo" style="height: 100%;">
 			<div class="logo"
 				style="display: flex; flex-direction: column; align-items: center;justify-content: center; position: relative;">
-				<img src="assets/img/lgmits.jfif" alt="" loading="eager">
+				<img src="assets/new-collage-log.PNG" alt="" loading="eager">
 				<!-- <a href="https://www.mits.ac.in/"
 					style="font-size: 0.7rem; color: white; position: absolute;bottom: 0; transform: translateY(100%);">www.mits.ac.in</a> -->
 			</div>
@@ -954,7 +1017,7 @@
 					<div class="timer-label">Seconds</div>
 				</div>
 			</div>	 -->
-			<img src="assets/img/ashv-theraceoftalent.png" alt="" class="ashv" loading="eager">
+			<img src="assets/Ashv-logo-final.PNG" alt="" class="ashv" loading="eager">
 			<!-- <p style="color: white;" class="association-text">Association with</p>
 			<img src="assets/images/sponsors/The_Times_of_India_Logo_full.png" alt="" class="association-sponsor"
 				style="height: 8%; background-color: white; margin-bottom: 2rem; z-index: 10000000000;"> -->
@@ -1078,35 +1141,73 @@
 
 
 		<!-- Shows -->
-		<section class="shows-section">
+		<!-- <section class="shows-section">
 			<h1 class="shows-title">Shows</h1>
 			<div class="shows-grid">
 				<div class="show">
 					<img src="assets/img/celebrity-night.jpeg" alt="Celebrity Night" class="show-image">
 					<div class="show-content">
-						<h2 class="show-title">Celebrity Night</h2>
+						<h2 class="show-title">Celebrity Night</h2> -->
 						<!-- <button class="know-more-btn">Know More</button> -->
-					</div>
+					<!-- </div>
 				</div>
 
 				<div class="show">
 					<img src="assets/img/musical-night.jpeg" alt="Comming soon" class="show-image">
 
 					<div class="show-content">
-						<h2 class="show-title">Musical Night</h2>
+						<h2 class="show-title">Musical Night</h2> -->
 						<!-- <button class="know-more-btn">Know More</button> -->
-					</div>
+					<!-- </div>
 				</div>
 
 				<div class="show">
 					<img src="assets/img/influencer-meetup.jpeg" alt="Theatre" class="show-image">
 					<div class="show-content">
-						<h2 class="show-title">Influencer MeetUp</h2>
+						<h2 class="show-title">Influencer MeetUp</h2> -->
 						<!-- <button class="know-more-btn">Know More</button> -->
-					</div>
+					<!-- </div>
 				</div>
 			</div>
-		</section>
+		</section> -->
+
+  <!-- Shows new-->
+
+  <section class="shows-new">
+	<div class="shows-new-heading">
+		<h2>Shows</h2>
+	</div>
+	<div class="shows-new-content">
+		<div class="shows-new-div">
+			<div class="show-new-data">
+				<h1>Celebrity Night</h1>
+			</div>
+			<div class="show-new-image">
+				<img src="assets/img/celebrity-night.jpeg" alt="">
+			</div>
+		</div>
+		<div class="shows-new-div" id="show-2-new" >
+
+			<div class="show-new-image">
+				<img src="assets/img/musical-night.jpeg" alt="">
+			</div>
+
+			<div class="show-new-data">
+				<h1>Musical Night</h1>
+			</div>
+			
+		</div>
+		<div class="shows-new-div" >
+			<div class="show-new-data">
+				<h1>Influencer MeetUp</h1>
+			</div>
+			<div class="show-new-image">
+				<img src="assets/img/influencer-meetup.jpeg" alt="">
+			</div>
+		</div>
+	</div>
+  </section>
+
 
 		<!-- Events -->
 		<section class="events-section">
@@ -1191,7 +1292,7 @@
 				<div class="social-and-contacts">
 					<ul class="social-links">
 						<li>
-							<a href="https://www.instagram.com/ashv2k25?igsh=NXp2djdvZHV4eHYy">
+							<a href="https://www.instagram.com/mits_ashv?igsh=MXhmOW01eTljc3lvOQ==">
 								<i class="fab fa-instagram"></i> Instagram
 							</a>
 						</li>
@@ -1405,6 +1506,12 @@
 
 		images.forEach(img => observer.observe(img));
 	</script>
+
+	<script>
+  AOS.init();
+</script>
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </body>
 
